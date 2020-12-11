@@ -6,6 +6,9 @@ import Projects from './components/Projects'
 import ProjectDetails from './components/ProjectDetails'
 import Contact from './components/Contact'
 import Nav from './components/Nav'
+import Weather from './components/Weather'
+import Github from './components/Github'
+// // import GithubResults from './components/GithubResults'
 
 function App() {
   const projectList = [
@@ -24,6 +27,8 @@ function App() {
       <div className="App">
         <Nav />
 
+        <Route path="/github" component={Github} />
+        <Route path="/weather" component={Weather} />
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
